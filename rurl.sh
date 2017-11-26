@@ -12,6 +12,6 @@ source .sourcefiles
 
 
 case $1 in
-   "show" ) shift;show $@;;
+   "show" ) shift;show;;
    * ) saveurl $@;;
 esac
