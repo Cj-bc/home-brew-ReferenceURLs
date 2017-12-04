@@ -8,9 +8,18 @@
 # http://opensource.org/license/mit-license.php
 # version 0.0.1
 
-source .sourcefiles
+func show {
+# -------------choose one you want
+  cat .refurl
+#  less .refurl
+#  vi .refurl
+}
 
-
+func saveurl {
+    echo $@ >> .refurl
+}
+ 
+# ------------ MAIN
 case $1 in
    "show" ) shift;show;;
    * ) saveurl $@;;
