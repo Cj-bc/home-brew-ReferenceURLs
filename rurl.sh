@@ -8,14 +8,14 @@
 # http://opensource.org/license/mit-license.php
 # version 0.0.1
 
-func show {
+function show {
 # -------------choose one you want
   cat .refurl
 #  less .refurl
 #  vi .refurl
 }
 
-func saveurl {
+function saveurl {
     echo $@ >> .refurl
 }
  
